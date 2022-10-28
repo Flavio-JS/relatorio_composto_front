@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+and,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input,
+textarea,
+select {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+del {
+  text-decoration: line-through;
+}
+hr {
+  background: transparent;
+  border: 0;
+  clear: both;
+  color: transparent;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+mark {
+  background-color: #ffffb3;
+  font-style: italic;
+}
+input,
+select {
+  vertical-align: middle;
+}
+ins {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  text-decoration: none;
+  color: black;
+}
+
+/* -------------------------------------------- */
+
+body {
+  background-color: #f2f2f2;
+}
+
+.card {
+  background: var(--color-eggshell);
+  padding: calc(4 * 0.5rem);
+  margin-top: calc(4 * 0.5rem);
+  margin-bottom: calc(4 * 0.5rem);
+  border-radius: 4px;
+  border: 3px solid;
+  box-shadow: 0.5rem 0.5rem 0;
+  width: 50%;
+}
+
+.input {
+  position: relative;
+}
+
+.input__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: calc(0.5rem * 0.75) calc(0.5rem * 0.5);
+  margin: calc(0.5rem * 0.75 + 3px) calc(0.5rem * 0.5);
+  background: pink;
+  white-space: nowrap;
+  transform: translate(0, 0);
+  transform-origin: 0 0;
+  background: #f2f2f2;
+  transition: transform 120ms ease-in;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.input__field {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 3px solid currentColor;
+  padding: calc(0.5rem * 1.5) 0.5rem;
+  margin-bottom: 12px;
+  color: currentColor;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.input__field:not(:placeholder-shown) + .input__label {
+  transform: translate(0.25rem, -65%) scale(0.8);
+}
