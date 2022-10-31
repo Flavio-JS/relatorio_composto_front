@@ -4,6 +4,7 @@ import { Layout } from "./components/Layout/Layout";
 import { Home } from "./pages/Home/Home";
 import { Login } from "./pages/Login/Login";
 import { useState } from "react";
+import { AdmPage } from "./pages/AdmPage/AdmPage";
 
 function App() {
   let [admData, setAdmData] = useState([
@@ -30,6 +31,10 @@ function App() {
             }
           ></Route>
           <Route path="/home" element={<Home admData={admData} />}></Route>
+          <Route
+            path="/admPage"
+            element={<AdmPage admData={admData} />}
+          ></Route>
         </Route>
       </Routes>
     </div>

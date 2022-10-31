@@ -2,7 +2,6 @@ import "./Login.css";
 import { useState } from "react";
 import axios from "axios";
 import { Button } from "../../components/Button/Button";
-import { NavLink } from "react-router-dom";
 
 export const Login = ({ setAdmData, url, admData }) => {
   let [loginCpf, setLoginCpf] = useState("");
