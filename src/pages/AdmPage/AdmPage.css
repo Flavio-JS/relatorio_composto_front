@@ -1,6 +1,37 @@
-.adm-page__section {
+.adm__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% - 150px);
+}
+
+.adm__section h1 {
+  font-size: 20px;
+}
+
+.adm__navbar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-left: 10px;
+
+  width: 200px;
+  height: 100%;
+}
+
+.adm__navbar b {
+  margin-top: 10px;
+}
+
+.adm__navbar b:hover {
+  cursor: pointer;
+}
+
+.adm_newAdm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }

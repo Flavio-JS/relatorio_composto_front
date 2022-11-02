@@ -17,9 +17,6 @@ function App() {
 
   let url = "http://localhost";
 
-  console.log("admData");
-  console.log(admData);
-
   return (
     <div className="App">
       <Routes>
@@ -33,7 +30,7 @@ function App() {
           <Route path="/home" element={<Home admData={admData} />}></Route>
           <Route
             path="/admPage"
-            element={<AdmPage admData={admData} />}
+            element={<AdmPage admData={admData} url={url} />}
           ></Route>
         </Route>
       </Routes>

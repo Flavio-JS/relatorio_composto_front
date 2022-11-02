@@ -155,6 +155,10 @@ a {
 
 /* -------------------------------------------- */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f2f2f2;
   height: 100vh;
@@ -205,6 +209,11 @@ body {
   color: currentColor;
   background: transparent;
   border-radius: 4px;
+  transition: all 0.1s;
+}
+
+.input__field:focus {
+  border-radius: 10px;
 }
 
 .input__field:not(:placeholder-shown) + .input__label {
